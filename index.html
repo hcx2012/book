@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      repo: '',
+      name: 'hcx\'s 学习笔记',
+      nameLink: '/',
+      coverpage: true,
+      loadNavbar: true,
+	  subMaxLevel: 3,
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      },
+      search: 'auto',
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: 'No Results',
+        namespace: 'website-1',
+      },
+      tabs: {
+          persist: false,
+          theme: 'material',
+      },
+    }
+  </script>
+  
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cpp.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+  <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts"></script>
+  <script>
+  setTimeout(function(){document.getElementsByClassName("markdown-section")[0].innerHTML=document.getElementsByClassName("markdown-section")[0].innerHTML+"<div id=\"gitalk-container\"></div>"}, 2000)
+	setTimeout(function(){
+	var gitalk = new Gitalk({
+		  clientID: '1ff33072e452629a6b3c', // GitHub Application Client ID
+		  clientSecret: '218f518eb0dd2235a7fb4781e4a6227ea71b004b', // GitHub Application Client Secret
+		  repo: 'pinglun',      // 存放评论的仓库
+		  owner: 'hcx2012',          // 仓库的创建者，
+		  admin: ['hcx2012'],        // 如果仓库有多个人可以操作，那么在这里以数组形式写出
+		  id: location.pathname,      // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
+		  proxy: 'https://vercel.prohibitorum.top/github_access_token'
+	});
+	gitalk.render('gitalk-container');
+	},2100)
+
+  </script>
+</body>
+<!--218f518eb0dd2235a7fb4781e4a6227ea71b004b-->
+</html>

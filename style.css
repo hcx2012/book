@@ -1,0 +1,55 @@
+:root{
+	--docsifytabs-tab-highlight-color:#42b983;
+}
+.matching-post{
+    color: #34495E;
+    margin: 0 0 20px;
+    padding: 15px 20px 15px 20px;
+	-moz-box-shadow: 2px 2px 15px #ccc;
+	-webkit-box-shadow: 2px 2px 15px #ccc;
+	box-shadow: 2px 2px 15px #ccc;
+}
+.results-panel{
+	margin: 0.5em 0;
+}
+#gitalk-container{
+	margin: 0 auto;
+}
+.gt-container a{
+	color: #42b983 !important;
+}
+.gt-container .gt-link {
+    border-bottom: 1px dotted #42b983 !important;
+}
+.gt-container .gt-svg svg {
+    fill: #42b983 !important;
+}
+.gt-container .gt-btn{
+	border-color: #42b983 !important;
+}
+.gt-container .gt-btn-preview
+ {
+    color: #42b983 !important;
+}
+.gt-container .gt-btn-public{
+	background-color:#42b983 !important;
+}
+.gt-container .gt-user{
+	color:#42b983;
+}
+.docsify-copy-code-button{
+	background-color: #42b983 !important;
+	border-radius: 1.5em !important;
+}
+.docsify-copy-code-button .error, .docsify-copy-code-button .success{
+	display:block;
+	border-radius: 1.5em !important;
+}
+.scroll-to-top{
+	background-color: #42b983 !important;
+	border-color: #42b983 !important;
+	color: white !important;
+}
+.sidebar{
+	left:10px !important;
+}
