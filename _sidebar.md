@@ -1,4 +1,4 @@
 <!-- _sidebar.md -->
 
-* 指南
-  * [markdown指南](/markdown.md)
+* [指南](/guide)
+  * [markdown指南](/guide/markdown.md)
