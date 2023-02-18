@@ -1,6 +1,6 @@
 # markdown指南
 ## 1.标题
-<!--Tabs:start-->
+<!--tabs:start-->
 
 #### **代码**
 
@@ -16,4 +16,4 @@
 > ## 二级标题 <!-- {docsify-ignore} -->
 > ### 三级标题 <!-- {docsify-ignore} -->
 
-<!--Tabs:end-->
+<!--tabs:end-->
