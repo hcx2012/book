@@ -43,7 +43,7 @@
     }
 
   </script>
-  
+	<script src="//cdn.jsdelivr.net/npm/jquery"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
@@ -63,8 +63,9 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts"></script>
   <script>
+  $(function(){
   setTimeout(function(){
-	  document.getElementsByClassName("markdown-section")[0].innerHTML=document.getElementsByClassName("markdown-section")[0].innerHTML+"<div id=\"gitalk-container\"></div>"
+	  $(".markdown-section")[0].append("<div id=\"gitalk-container\"></div>");
 	  var gitalk = new Gitalk({
 		clientID: '1ff33072e452629a6b3c', // GitHub Application Client ID
 		clientSecret: '218f518eb0dd2235a7fb4781e4a6227ea71b004b', // GitHub Application Client Secret
@@ -75,7 +76,8 @@
 		  proxy: 'https://vercel.prohibitorum.top/github_access_token'
 	  });
 	  gitalk.render('gitalk-container');
-  }, 200)
+  }, 500);
+  });
   </script>
 </body>
 <!--218f518eb0dd2235a7fb4781e4a6227ea71b004b-->
