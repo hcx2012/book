@@ -32,3 +32,24 @@
 
 > [!TIP]
 > 优化后，并查集并不始终为一个菊花图(只有两层的树的俗称)。
+
+## 2.代码实现
+```cpp
+const int SIZE = 1000 + 10;// 可以改成你自己的参数(并查集节点最大值)
+int fa[SIZE];
+void init(){
+  for (int i = 0; i < SIZE; i++ ){
+    fa[i] = i;
+  }
+}
+int get_fa(int node){
+  if (fa[node] == node){
+    return node; //如果父节点是自身，则这个节点就是根节点
+  }
+  return fa[node] = get_fa(node); //路径压缩
+  // return get_fa(node); //不压缩
+}
+void merge(int x,int y){
+  fa[get_fa(x)]=get_fa(y);
+}
+```
