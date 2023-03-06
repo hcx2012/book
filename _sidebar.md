@@ -2,4 +2,4 @@
 
 * [指南](/guide)
   * [markdown指南](/guide/markdown.md)
-* [并查集](/disjointSet.md)
+* [并查集](/DisjointSetUnion.md)
