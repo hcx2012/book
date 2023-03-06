@@ -1,4 +1,4 @@
-# 并查集
+# 并查集(Disjoint Set Union,DSU)
 
 ## 1.原理
 
