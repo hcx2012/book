@@ -18,7 +18,8 @@ function plugin(hook, vm) {
     let wordsCount
     hook.beforeEach(function (content) {
         // Match regex every time you start parsing .md
-        wordsCount = content.match(/([\u4e00-\u9fa5]+?|[a-zA-Z0-9]+)/g).length
+        var text = content.replace(/```dot(.|[\n\r])*```/g,'');
+        wordsCount = text.match(/([\u4e00-\u9fa5]+?|[a-zA-Z0-9]+)/g).length
         return content
     })
     hook.afterEach(function (html, next) {
