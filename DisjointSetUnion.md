@@ -75,5 +75,26 @@ digraph{
   }
 }
 ```
+```dot
+digraph{
+  label = "合并集合a到b"
+  rankdir="BT"
+  subgraph cluster_a{
+    label = "集合a"
+    b -> a;
+    c -> a;
+    d -> b;
+    e -> d;
+  }
+  subgraph cluster_b{
+    label = "集合b"
+    g -> f;
+    h -> f;
+    i -> f;
+    j -> i;
+  }
+  a -> f;
+}
+```
 #### 注
 \*:大部分时间不是菊花图
