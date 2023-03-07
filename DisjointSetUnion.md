@@ -56,7 +56,7 @@ void merge(int x,int y){
 
 ## 3.图解并查集
 ```dot
-digraph{
+digraph "初始形态并查集"{
   label = "初始形态并查集"
   rankdir="BT"
   subgraph cluster_a{
@@ -76,8 +76,8 @@ digraph{
 }
 ```
 ```dot
-digraph{
-  label = "合并集合a到b"
+digraph "合并集合a到集合b"{
+  label = "合并集合a到集合b"
   rankdir="BT"
   subgraph cluster_a{
     label = "集合a"
