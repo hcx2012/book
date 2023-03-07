@@ -56,12 +56,18 @@ void merge(int x,int y){
 
 ## 3.图解并查集
 ```dot
-digraph{
-  rankdir="BT"
+rankdir="BT"
+digraph a{
   b -> a;
   c -> a;
   d -> b;
   e -> d;
+}
+digraph b{
+  g -> f;
+  h -> f;
+  i -> f;
+  j -> i;
 }
 ```
 #### 注
