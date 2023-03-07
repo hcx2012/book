@@ -57,15 +57,17 @@ void merge(int x,int y){
 ## 3.图解并查集
 ```dot
 digraph{
+  label = "初始形态并查集"
+  rankdir="BT"
   subgraph cluster_a{
-    rankdir="BT"
+    label = "集合a"
     b -> a;
     c -> a;
     d -> b;
     e -> d;
   }
   subgraph cluster_b{
-    rankdir="BT"
+    label = "集合b"
     g -> f;
     h -> f;
     i -> f;
