@@ -96,5 +96,20 @@ digraph "合并集合a到集合b"{
   a -> f;
 }
 ```
+```dot
+digraph "合并后的集合"{
+  label = "合并后的集合"
+  rankdir="BT"
+  b -> a;
+  c -> a;
+  d -> b;
+  e  -> d;
+  g -> f;
+  h -> f;
+  i -> f;
+  j -> i;
+  a -> f;
+}
+```
 #### 注
 \*:大部分时间不是菊花图
