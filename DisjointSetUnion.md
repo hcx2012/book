@@ -56,19 +56,21 @@ void merge(int x,int y){
 
 ## 3.图解并查集
 ```dot
-digraph a{
-  rankdir="BT"
-  b -> a;
-  c -> a;
-  d -> b;
-  e -> d;
-}
-digraph b{
-  rankdir="BT"
-  g -> f;
-  h -> f;
-  i -> f;
-  j -> i;
+digraph{
+  subgraph cluster_a{
+    rankdir="BT"
+    b -> a;
+    c -> a;
+    d -> b;
+    e -> d;
+  }
+  subgraph cluster_b{
+    rankdir="BT"
+    g -> f;
+    h -> f;
+    i -> f;
+    j -> i;
+  }
 }
 ```
 #### 注
