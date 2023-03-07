@@ -66,7 +66,7 @@ digraph "初始形态并查集"{
     d -> b;
     e -> d;
   }
-  subgraph cluster_a{
+  subgraph cluster_b{
     label = "集合b"
     g -> f;
     h -> f;
