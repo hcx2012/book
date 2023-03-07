@@ -59,14 +59,14 @@ void merge(int x,int y){
 digraph "初始形态并查集"{
   label = "初始形态并查集"
   rankdir="BT"
-  subgraph cluster_a{
+  subgraph "集合a"{
     label = "集合a"
     b -> a;
     c -> a;
     d -> b;
     e -> d;
   }
-  subgraph cluster_b{
+  subgraph "集合b"{
     label = "集合b"
     g -> f;
     h -> f;
