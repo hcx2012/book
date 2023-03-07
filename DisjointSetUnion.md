@@ -57,10 +57,10 @@ void merge(int x,int y){
 ## 3.图解并查集
 ```dot
 digraph G1{
-  b -> a
-  c -> a
-  d -> b
-  e -> d
+  b <- a
+  c <- a
+  d <- b
+  e <- d
 }
 ```
 #### 注
