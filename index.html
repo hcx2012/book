@@ -59,9 +59,7 @@
 			viz.renderString(code).then(function(string) {
   				 value='<div class="viz">'+string+'</div>';
 				});
-			var waitForMillisecond = 100;  
-			var endTime = new Date().getTime() + parseInt(waitForMillisecond, 10);
-			while(new Date().getTime() < endTime ) {;}
+			while(value==undefined ) {;}
 		    return value;
             }
             return this.origin.code.apply(this, arguments);
