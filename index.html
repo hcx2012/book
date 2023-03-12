@@ -55,9 +55,8 @@
         renderer: {
           code: function(code, lang) {
             if (lang === "dot") {
-		    var value;
-				viz.renderString(code).then(function(string) {
-  					value='<div class="viz">'+string+'</div>'
+		    var value = await viz.renderString(code).then(function(string) {
+  					return '<div class="viz">'+string+'</div>'
 				});
 		    return value;
             }
