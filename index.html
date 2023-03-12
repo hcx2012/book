@@ -22,6 +22,7 @@
 <body>
   <div id="app"></div>
   <script>
+    var viz=Viz();
     window.$docsify = {
       repo: '',
       name: 'hcx\'s 学习笔记',
@@ -54,9 +55,9 @@
         renderer: {
           code: function(code, lang) {
             if (lang === "dot") {
-              return (
-                      '<div class="viz">'+ Viz(code, "SVG")+'</div>'
-              );
+				viz.renderString(code).then(function(string) {
+  					return '<div class="viz">'+string+'</div>'
+				});
             }
             return this.origin.code.apply(this, arguments);
           }
